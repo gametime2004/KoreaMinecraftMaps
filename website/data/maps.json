@@ -10,7 +10,7 @@
   "./images/KMAP-0001.png",
   "./images/KMAP-0002.png"
         ],
-    "downloadUrl": "./downloads/KMAP-0001.zip",
+    "downloadUrl": "https://github.com/gametime2004/KoreaMinecraftMaps/archive/refs/tags/maps-v1.0.zip",
     "sourceUrl": "https://blog.naver.com/chs971001/222866908470",
     "license": "제작자 재배포 허가"
   },
