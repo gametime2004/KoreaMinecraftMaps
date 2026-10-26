@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ko">
+  <header>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Korea Minecraft Maps | PC 다운로드</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <header><span class="eyebrow">KOREA MINECRAFT MAPS</span><h1>한국 마인크래프트 맵</h1><p>앱에서 확인한 맵 코드를 입력하면 PC에서 맵 정보를 확인할 수 있어요.</p></header>
+    <form id="searchForm" class="search" autocomplete="off">
+      <label for="mapCode">맵 코드</label>
+      <div class="search-row"><input id="mapCode" placeholder="예: KMAP-0001" required><button type="submit">검색</button></div>
+    </form>
+    <p id="status" class="status" role="status" aria-live="polite">맵 정보를 불러오는 중...</p>
+    <section id="result" class="result" hidden aria-label="맵 검색 결과"></section>
+
+
+<!-- ========================================
+     마인크래프트 맵 카드 목록
+     유튜브 홈 화면처럼 맵을 보여주는 영역
+     ======================================== -->
+
+<section class="map-gallery">
+  <h2>마인크래프트 맵 둘러보기</h2>
+  <p>마음에 드는 맵을 선택하면 상세 페이지로 이동합니다.</p>
+
+
+<!-- ========================================
+     맵 목록 검색 및 에디션 필터
+     ======================================== -->
+
+<div class="map-filters">
+
+  <!-- 맵 이름, 제작자, 버전, 코드를 검색하는 입력창 -->
+  <input
+    type="search"
+    id="mapSearch"
+    placeholder="맵 이름, 제작자, 버전 검색"
+    aria-label="마인크래프트 맵 검색"
+  >
+
+  <!-- Java / Bedrock 에디션 선택 -->
+  <select id="editionFilter" aria-label="마인크래프트 에디션 선택">
+    <option value="all">전체 에디션</option>
+    <option value="Java">Java Edition</option>
+    <option value="Bedrock">Bedrock Edition</option>
+  </select>
+
+</div>
+
+<!-- 검색 결과 개수 표시 -->
+<p id="mapCount" aria-live="polite"></p>
+
+  <!-- JavaScript가 여기에 맵 카드를 자동으로 생성해요. -->
+  <div id="mapGrid" class="map-grid"></div>
+</section>
+
+
+    <section class="guide"><h2>이용 방법</h2><p>Android 앱에서 Java 에디션 맵의 코드를 확인하고, 이 페이지에서 검색하세요. 제작자가 허용한 다운로드 링크가 등록되면 PC에서 받을 수 있습니다.</p></section>
+    <footer>비공식 팬 프로젝트 · Minecraft 및 관련 명칭은 해당 권리자의 자산입니다.</footer>
+  </main>
+  <script src="script.js" defer></script>
+</body>
+</html>

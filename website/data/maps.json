@@ -1,0 +1,29 @@
+[
+  {
+    "id": "KMAP-0001",
+    "title": "여울특별시",
+    "creator": "심풀 (Simpul)",
+    "description": "서울특별시를 모티브로 제작된 마인크래프트 도시 맵입니다. Minecraft Java Edition 1.12.2 맵입니다.",
+    "edition": "Java",
+    "minecraftVersion": "1.12.2",
+   "imageUrls": [
+  "./images/KMAP-0001.png",
+  "./images/KMAP-0002.png"
+        ],
+    "downloadUrl": "./downloads/KMAP-0001.zip",
+    "sourceUrl": "https://blog.naver.com/chs971001/222866908470",
+    "license": "제작자 재배포 허가"
+  },
+  {
+    "id": "KMAP-0002",
+    "title": "한국형 학교맵 (테스트)",
+    "creator": "테스트 제작자",
+    "description": "한국 학교 건축물을 구현한 테스트용 맵입니다.",
+    "edition": "Bedrock",
+    "minecraftVersion": "1.21",
+    "imageUrl": "",
+    "downloadUrl": "",
+    "sourceUrl": "",
+    "license": "테스트 데이터"
+  }
+]

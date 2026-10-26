@@ -1,0 +1,225 @@
+:root{font-family:system-ui,-apple-system,"Malgun Gothic",sans-serif;color:#eaf0f7;background:#101820}*{box-sizing:border-box}body{margin:0}.container{max-width:760px;margin:0 auto;padding:72px 20px 36px}.eyebrow{color:#87d7b1;letter-spacing:.15em;font-size:12px;font-weight:800}h1{font-size:clamp(30px,6vw,48px);margin:12px 0}header p,.guide p{color:#aebdca;line-height:1.7}.search,.result,.guide{margin-top:30px;background:#1a2834;border:1px solid #344554;border-radius:16px;padding:24px}.search label{display:block;margin-bottom:12px;font-weight:700}.search-row{display:flex;gap:10px}input{flex:1;min-width:0;border-radius:10px;padding:14px;border:1px solid #627485;background:#101820;color:#fff;font-size:16px}button,.download{border:0;border-radius:10px;background:#77ddb0;color:#092317;font-weight:800;padding:14px 22px;cursor:pointer;text-decoration:none;display:inline-block}button:hover,.download:hover{background:#a1e9c8}.status{color:#b8c8d5;min-height:24px;margin-top:16px}.result h2{margin-top:0}.meta{color:#b7c9d6;line-height:1.8}.guide h2{font-size:18px}footer{margin-top:50px;color:#8b9aa7;font-size:12px}@media(max-width:450px){.search-row{flex-direction:column}}
+
+/* 맵 상세 화면 전용 스타일 */
+.back,.secondary-link{color:#8ce3b7;text-decoration:underline;text-underline-offset:3px}.back{display:inline-block;margin-bottom:26px}.secondary-link{display:inline-block;margin:10px 0 22px}.preview{width:100%;max-height:380px;object-fit:cover;border-radius:12px;margin:14px 0}.placeholder{background:#13212d;border:1px dashed #496071;color:#b7c9d6;padding:20px;border-radius:10px}.facts{display:grid;grid-template-columns:minmax(110px,1fr) 2fr;gap:10px 16px;padding:18px;background:#13212d;border-radius:12px}.facts dt{color:#9bb1c2}.facts dd{margin:0;font-weight:600}.result h3{margin-top:30px}.result p{line-height:1.7}
+
+
+
+/* ========================================
+   맵 미리보기 이미지 슬라이드 디자인
+   ======================================== */
+
+/* 이미지와 버튼을 담는 영역 */
+.map-slider {
+  position: relative;
+  width: 100%;
+  max-width: 850px;
+  margin: 20px auto;
+  overflow: hidden;
+  border-radius: 12px;
+  background: #171717;
+}
+
+/* 슬라이드 이미지 */
+.map-slider .preview {
+  display: block;
+  width: 100%;
+  height: 420px;
+  object-fit: contain;
+  margin: 0;
+}
+
+/* 이전 / 다음 버튼 공통 디자인 */
+.slider-prev,
+.slider-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  border-radius: 8px;
+  padding: 12px 16px;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  font-size: 22px;
+  cursor: pointer;
+  z-index: 2;
+}
+
+/* 이전 버튼은 왼쪽 */
+.slider-prev {
+  left: 12px;
+}
+
+/* 다음 버튼은 오른쪽 */
+.slider-next {
+  right: 12px;
+}
+
+/* 버튼 위에 마우스를 올렸을 때 */
+.slider-prev:hover,
+.slider-next:hover {
+  background: rgba(0, 0, 0, 0.85);
+}
+
+/* 이미지 번호 표시 */
+.slider-counter {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 5px 12px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.65);
+  color: white;
+  font-size: 14px;
+}
+
+/* 모바일 화면에서는 이미지 높이 축소 */
+@media (max-width: 600px) {
+  .map-slider .preview {
+    height: 240px;
+  }
+
+  .slider-prev,
+  .slider-next {
+    padding: 8px 12px;
+    font-size: 18px;
+  }
+}
+
+
+/* ========================================
+   유튜브 스타일 마인크래프트 맵 카드
+   ======================================== */
+
+/* 맵 목록 전체 영역 */
+.map-gallery {
+  margin-top: 36px;
+}
+
+/* 맵 카드들을 격자 형태로 배치 */
+.map-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 20px;
+}
+
+/* 맵 카드 */
+.map-card {
+  display: block;
+  min-width: 0;
+  color: inherit;
+  text-decoration: none;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+}
+
+/* 마우스를 올리면 카드가 살짝 커져요. */
+.map-card:hover {
+  transform: translateY(-4px);
+}
+
+/* 썸네일 이미지 영역 */
+.map-card-thumbnail {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  background: #252525;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #aaa;
+}
+
+/* 이미지를 영역에 맞춰 표시 */
+.map-card-thumbnail img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* 맵 제목과 제작자 정보 */
+.map-card-info {
+  padding: 12px 4px;
+}
+
+.map-card-info h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.map-card-info p {
+  margin: 4px 0;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* PC보다 작은 화면에서는 2개씩 */
+@media (max-width: 900px) {
+  .map-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* 모바일에서는 1개씩 */
+@media (max-width: 600px) {
+  .map-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}
+
+/* ========================================
+   맵 검색창 및 에디션 필터 디자인
+   ======================================== */
+
+/* 검색창과 필터를 가로로 배치해요. */
+.map-filters {
+  display: flex;
+  gap: 12px;
+  margin-top: 20px;
+  margin-bottom: 12px;
+}
+
+/* 검색 입력창 */
+#mapSearch {
+  flex: 1;
+  min-width: 0;
+  padding: 13px 16px;
+  border: 1px solid #666;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+/* 에디션 선택 메뉴 */
+#editionFilter {
+  min-width: 160px;
+  padding: 13px;
+  border: 1px solid #666;
+  border-radius: 10px;
+  font-size: 15px;
+}
+
+/* 검색 결과 개수 */
+#mapCount {
+  margin: 12px 0;
+  font-size: 14px;
+  opacity: 0.8;
+}
+
+/* 모바일에서는 검색창과 필터를 세로로 배치해요. */
+@media (max-width: 600px) {
+  .map-filters {
+    flex-direction: column;
+  }
+
+  #mapSearch,
+  #editionFilter {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
