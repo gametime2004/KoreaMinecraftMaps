@@ -8,22 +8,25 @@
     "minecraftVersion": "1.12.2",
    "imageUrls": [
   "./images/KMAP-0001.png",
-  "./images/KMAP-0002.png"
+  "./images/KMAP-0001-1.png"
         ],
     "downloadUrl": "https://github.com/gametime2004/KoreaMinecraftMaps/archive/refs/tags/maps-v1.0.zip",
     "sourceUrl": "https://blog.naver.com/chs971001/222866908470",
     "license": "제작자 재배포 허가"
   },
-  {
-    "id": "KMAP-0002",
-    "title": "한국형 학교맵 (테스트)",
-    "creator": "테스트 제작자",
-    "description": "한국 학교 건축물을 구현한 테스트용 맵입니다.",
-    "edition": "Bedrock",
-    "minecraftVersion": "1.21",
-    "imageUrl": "",
-    "downloadUrl": "",
-    "sourceUrl": "",
-    "license": "테스트 데이터"
-  }
+
+{
+  "id": "KMAP-0002",
+  "title": "City Tour [ECM_V0.1]",
+  "creator": "EoMoTTy",
+  "description": "제작자가 약 2년 동안 제작한 마인크래프트 도시 건축 맵입니다. 도시의 다양한 건축물과 풍경을 자유롭게 탐방할 수 있습니다.",
+  "edition": "Java",
+  "minecraftVersion": "1.19.2",
+  "imageUrls":[ "./images/KMAP-0002.png","./images/KMAP-0002-1.png","./images/KMAP-0002-2.png","./images/KMAP-0002-3.png"],
+  
+  "downloadUrl": "https://github.com/gametime2004/KoreaMinecraftMaps/releases/download/maps-v1.0/KMAP-0002.zip",
+  "sourceUrl": "https://www.koreaminecraft.net/map/3429009",
+  "license": "제작자에게 직접 재배포 허락을 받음"
+}
+
 ]
